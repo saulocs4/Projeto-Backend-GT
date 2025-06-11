@@ -1,0 +1,9 @@
+model Category {
+  id  Int @id @default(autoincrement()) 
+  name String
+  slug String
+  use_in_menu Boolean @default(false) 
+  quantity Int @default(0)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
