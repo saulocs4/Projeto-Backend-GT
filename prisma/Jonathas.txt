@@ -1,0 +1,25 @@
+model Product {
+  id Int @id
+  itens ProductOptions[]
+}
+
+model ProductOptions {
+  id Int @id @default(autoincrement())
+  product_id Int // vem tabela produto
+  title String
+  shape Role @default(square)
+  radius Int @default(0) 
+  type  OptionType @default(TEXT) 
+  values String
+  product Product @relation(fields: [product_id], references: [id], onDelete: Cascade)
+}
+
+enum Role {
+ square
+ circle
+}
+
+enum OptionType {
+  TEXT
+  COLOR
+}
