@@ -1,0 +1,20 @@
+
+//Esta tabela poderá ter um relacionamento com a tabela de produtos, pq um produto pode ter várias imagens
+
+model ProductImage {
+  id          Int      @id @default(autoincrement())
+  productId   Int      
+  enabled     Boolean? @default(false) 
+  path        String   // Caminho relativo da imagem. Obrigatório.
+
+  // Relacionamento com Product com a tabela protudos
+  product     Product  @relation(fields: [productId], references: [id])
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+
+// Adicionar esta linha na tabela de Procutos um produto pode ter muitas imagens
+  images            ProductImage[] 
+
