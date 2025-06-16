@@ -70,7 +70,7 @@ model ProductImage {
 }
 
 // Adicionar esta linha na tabela de Procutos um produto pode ter muitas imagens
-  images            ProductImage[] 
+  // images            ProductImage[] 
 
 //Jonathas
 
