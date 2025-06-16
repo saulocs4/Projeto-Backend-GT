@@ -46,6 +46,8 @@ model Product {
   price       Decimal  @db.Decimal(10, 2)
   stock       Int      @default(0)
   active      Boolean  @default(true)
+  itens       ProductOptions[]
+  images      ProductImage[] 
 
   @@map("products")
 }
@@ -72,10 +74,6 @@ model ProductImage {
 
 //Jonathas
 
-model Product {
-  id Int @id
-  itens ProductOptions[]
-}
 
 model ProductOptions {
   id Int @id @default(autoincrement())
