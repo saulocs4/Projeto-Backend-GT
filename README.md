@@ -59,47 +59,41 @@ A API expõe os seguintes endpoints:
 Autenticação (User Token)
 Método	Endpoint	
 
-Produtos (/v1/product)
-GET	/v1/product/search	Não	Lista produtos com opções de filtro.
-GET	/v1/product/:id	Não	Obtém um produto específico pelo ID.
-POST	/v1/product	Sim	Cria um novo produto.
-PUT	/v1/product/:id	Sim	Atualiza um produto existente pelo ID.
-DELETE	/v1/product/:id	Sim	Deleta um produto existente pelo ID.
+** Produtos (/v1/product)
+*GET	/v1/product/search	Não	Lista produtos com opções de filtro.
+*GET	/v1/product/:id	Não	Obtém um produto específico pelo ID.
+*POST	/v1/product	Sim	Cria um novo produto.
+*PUT	/v1/product/:id	Sim	Atualiza um produto existente pelo ID.
+*DELETE	/v1/product/:id	Sim	Deleta um produto existente pelo ID.
 
-Exportar para as Planilhas
-Categorias (/v1/category)
-Método	Endpoint	Protegido	Descrição
-GET	/v1/category/search	Não	Lista categorias com opções de filtro.
-GET	/v1/category/:id	Não	Obtém uma categoria específica pelo ID.
-POST	/v1/category	Sim	Cria uma nova categoria.
-PUT	/v1/category/:id	Sim	Atualiza uma categoria existente pelo ID.
-DELETE	/v1/category/:id	Sim	Deleta uma categoria existente pelo ID.
 
-Exportar para as Planilhas
-Usuários (/v1/user)
-Método	Endpoint	Protegido	Descrição
-GET	/v1/user/:id	Não	Obtém informações de um usuário pelo ID.
-POST	/v1/user	Não	Cadastra um novo usuário (registro).
-PUT	/v1/user/:id	Sim	Atualiza um usuário existente pelo ID.
-DELETE	/v1/user/:id	Sim	Deleta um usuário existente pelo ID.
+** Categorias (/v1/category)
+* Método	Endpoint	Protegido	Descrição
+* GET	/v1/category/search	Não	Lista categorias com opções de filtro.
+* GET	/v1/category/:id	Não	Obtém uma categoria específica pelo ID.
+* POST	/v1/category	Sim	Cria uma nova categoria.
+* PUT	/v1/category/:id	Sim	Atualiza uma categoria existente pelo ID.
+* DELETE	/v1/category/:id	Sim	Deleta uma categoria existente pelo ID.
+
+
+** Usuários (/v1/user)
+* Método	Endpoint	Protegido	Descrição
+* GET	/v1/user/:id	Não	Obtém informações de um usuário pelo ID.
+* POST	/v1/user	Não	Cadastra um novo usuário (registro).
+* PUT	/v1/user/:id	Sim	Atualiza um usuário existente pelo ID.
+* DELETE	/v1/user/:id	Sim	Deleta um usuário existente pelo ID.
 
 
 👥 Equipe de Desenvolvedores
 
 Conheça a equipe responsável por este projeto e suas principais contribuições:
 
-Janiny Nóbrega: Responsável pela arquitetura de Rotas, configuração do App.js, e implementação dos Controllers e Middleware de autenticação.
-Saulo: Especialista em TI e Prisma ORM, garantindo a integração eficiente com o banco de dados.
-Jonathas: Foco na lógica de negócios e validações dos Services, garantindo o processamento correto das requisições.
-Ana: Desenvolvedora dos Repositories, responsável pela comunicação direta com o banco de dados através do Prisma.
-Jairo: Responsável pela definição das Tabelas e o design do schema.prisma, estruturando o modelo de dados.
+* Janiny Nóbrega: Responsável pela arquitetura de Rotas, configuração do App.js, e implementação dos Controllers e Middleware de autenticação.
+* Saulo: Especialista em TI e Prisma ORM, garantindo a integração eficiente com o banco de dados.
+* Jonathas: Foco na lógica de negócios e validações dos Services, garantindo o processamento correto das requisições.
+* Ana: Desenvolvedora dos Repositories, responsável pela comunicação direta com o banco de dados através do Prisma.
+* Jairo: Responsável pela definição das Tabelas e o design do schema.prisma, estruturando o modelo de dados.
 🤝 Contribuição
-Sinta-se à vontade para contribuir com este projeto! Siga os passos abaixo:
 
-Faça um fork do repositório.
-Crie uma nova branch (git checkout -b feature/sua-feature).
-Faça suas alterações e commit-as (git commit -m 'feat: adicione nova funcionalidade').
-Envie para o repositório original (git push origin feature/sua-feature).
-Abra um Pull Request.
 📄 Licença
 Projeto de estudo backend Geração Tech 2.0   
