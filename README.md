@@ -1,3 +1,4 @@
+
 # 🚀 E-commerce Backend API
 
 Bem-vindo ao backend da API do seu e-commerce!  
@@ -56,4 +57,73 @@ Após a configuração, rode o servidor de desenvolvimento:
 
 ```bash
 npm run dev
+```
 
+O servidor estará rodando em `http://localhost:3000` (ou na porta definida no seu `.env`).
+
+---
+
+## 🧪 Endpoints da API
+
+### Autenticação (User Token)
+
+*Implementar especificação se necessário.*
+
+---
+
+### **Produtos** `/v1/product`
+
+| Método | Endpoint             | Protegido | Descrição                                   |
+|--------|----------------------|-----------|---------------------------------------------|
+| GET    | /v1/product/search   | Não       | Lista produtos com opções de filtro         |
+| GET    | /v1/product/:id      | Não       | Obtém um produto específico pelo ID         |
+| POST   | /v1/product          | Sim       | Cria um novo produto                        |
+| PUT    | /v1/product/:id      | Sim       | Atualiza um produto existente pelo ID       |
+| DELETE | /v1/product/:id      | Sim       | Deleta um produto existente pelo ID         |
+
+---
+
+### **Categorias** `/v1/category`
+
+| Método | Endpoint             | Protegido | Descrição                                   |
+|--------|----------------------|-----------|---------------------------------------------|
+| GET    | /v1/category/search  | Não       | Lista categorias com opções de filtro       |
+| GET    | /v1/category/:id     | Não       | Obtém uma categoria específica pelo ID      |
+| POST   | /v1/category         | Sim       | Cria uma nova categoria                     |
+| PUT    | /v1/category/:id     | Sim       | Atualiza uma categoria existente pelo ID    |
+| DELETE | /v1/category/:id     | Sim       | Deleta uma categoria existente pelo ID      |
+
+---
+
+### **Usuários** `/v1/user`
+
+| Método | Endpoint             | Protegido | Descrição                                   |
+|--------|----------------------|-----------|---------------------------------------------|
+| GET    | /v1/user/:id         | Não       | Obtém informações de um usuário pelo ID     |
+| POST   | /v1/user             | Não       | Cadastra um novo usuário (registro)         |
+| PUT    | /v1/user/:id         | Sim       | Atualiza um usuário existente pelo ID       |
+| DELETE | /v1/user/:id         | Sim       | Deleta um usuário existente pelo ID         |
+
+---
+
+## 👥 Equipe de Desenvolvedores
+
+Conheça a equipe responsável por este projeto:
+
+- **Janiny Nóbrega**: Arquitetura de rotas, configuração do `App.js`, implementação dos *Controllers* e *Middleware* de autenticação.
+- **Saulo**: Especialista em TI e Prisma ORM, integração com o banco de dados.
+- **Jonathas**: Responsável pela lógica de negócios e validações dos *Services*.
+- **Ana**: Implementação dos *Repositories*, comunicação com o banco via Prisma.
+- **Jairo**: Definição das tabelas e design do `schema.prisma`.
+
+---
+
+## 🤝 Contribuição
+
+Este projeto foi desenvolvido de forma colaborativa como parte da formação Geração Tech 2.0.
+
+---
+
+## 📄 Licença
+
+Projeto de estudo — **Back-End E-commerce API - Geração Tech 2.0**
